@@ -1,6 +1,6 @@
-# Dev140
+# DEV140 - Database Theory and Design
 Welcome to my Python repository for Dev140 - Database Theory and SQL Programming.<br/> 
-Each project focuses on different aspects of SQL, from basic querying to more advanced database planning, design, and coding.
+Each project focuses on different aspects of SQL, from advanced querying (DML) to database planning, design, and coding (DDL).
 
 
 # Skills
