@@ -4,7 +4,7 @@ Each project focuses on different aspects of SQL, from advanced querying (DML) t
 
 
 # Skills
-Upon completion of this course, I understand how to:<br/>
+Completing this course gave me insight into database structure - specifically, how to:<br/>
 
 • Use client tools to work with a database server<br/>
 • Use Microsoft SQL Server Tools to work with the SQL Server relational database<br/>
