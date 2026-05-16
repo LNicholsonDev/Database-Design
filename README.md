@@ -1,19 +1,63 @@
-# Database Theory and Design
-Welcome to my Python repository for Database Theory and SQL Programming.<br/> 
-Each project focuses on different aspects of SQL, from advanced querying (DML) to database planning, design, and coding (DDL).
+# Relational Database Design
 
+SQL Server database work across two components: a progression of design 
+and querying exercises applied to multiple real-world scenarios, followed 
+by a complete end-to-end database design project built from business 
+requirements.
 
-# Skills
-Completing this course gave me insight into database structure - specifically, how to:<br/>
+---
 
-• Use client tools to work with a database server<br/>
-• Use Microsoft SQL Server Tools to work with the SQL Server relational database<br/>
-• Design basic databases according to proper design principles<br/>
-• Create databases using Structured Query Language (SQL) commands<br/>
-• Create SQL statements to safely and successfully add data to a database or modify existing data in a multi-user
-environment<br/>
-• Write basic and complex SQL queries to retrieve data from a database<br/>
-• Respond to business requirements for data and information<br/>
-• Write SQL code for the database including stored procedures<br/>
-• Create appropriate SQL queries in response to realistic requirements for data and information<br/>
-• Evaluate SQL queries for effective performance<br/>
+## Structure
+
+### [SQL Code - DDL and DML](./1%20-%20SQL%20Code%20-%20DDL%20and%20DML)
+
+Applied SQL across four distinct database scenarios:
+
+| Scenario | Focus |
+|---|---|
+| Boat Tour & Fishing Company | Table design, relationships, Crow's Foot notation |
+| Faculty Database | Relational schema, table joins, data retrieval |
+| Local Business (Retail) | Normalization, business rules, table structure |
+| Academic Course Catalog | Table design from real course data |
+
+Progressive query work covering:
+- **Assign 2** — Data retrieval and basic querying
+- **Assign 3** — Subqueries and CTEs (Common Table Expressions)
+- **Assign 4** — Action queries, updates, and views
+- **Assign 5** — T-SQL scripts, variables, and batch processing
+- **Stored Procedures** — Parameterized procedures and group exercises
+
+---
+
+### [Final Project - Design a Database](./2%20-%20Final%20Project%20-%20Design%20a%20Database)
+
+Full database design lifecycle for an academic course outcomes tracking 
+system (`zCourseOutcomes`). Models the relationships between academic 
+divisions, programs, program chairs, courses, and learning outcomes 
+within a college structure.
+
+**Part 1 - UML Design**  
+Conceptual and logical database design using UML/ER modeling prior to 
+implementation.
+
+**Part 2 - Implementation**  
+Schema includes six normalized tables with surrogate primary keys and 
+two junction tables handling many-to-many relationships:
+
+- `Division` → `Program` (divisions contain programs)
+- `Program` → `Course` (programs contain courses)
+- `ProgramChairMap` (junction: programs ↔ program chairs)
+- `CourseOutcome` (junction: courses ↔ learning outcomes)
+- `Outcome` (reusable outcome descriptions linked to multiple courses)
+
+Full implementation includes DDL schema creation, stored procedures, 
+query development, and a finalized database diagram in SQL Server.
+
+---
+
+## Stack
+
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
+![T-SQL](https://img.shields.io/badge/T--SQL-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
